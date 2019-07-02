@@ -17,7 +17,7 @@ dialer := &net.Dialer{
 }
 
 // wrap dial context with NTLM
-ntlmDialContext := newNTLMProxyDialContext(dialer, proxyURL, "user", "password", "domain", nil)
+ntlmDialContext := ntlm.NewNTLMProxyDialContext(dialer, proxyURL, "user", "password", "domain", nil)
 
 // create a http(s) client
 client := &http.Client{
