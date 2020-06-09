@@ -56,7 +56,7 @@ jobs:
       
       - run: go build
 
-  go-test-windows:
+  go-build-windows:
     executor:
       name: win/vs2019
       shell: powershell.exe
