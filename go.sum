@@ -1,5 +1,5 @@
-github.com/launchdarkly/go-ntlmssp v0.0.0-20190601005913-a22bdd33b2a4 h1:r1FdPJK3SrnEKWrE8M1C57lxywsXTOdDTw8+cBaIhTI=
-github.com/launchdarkly/go-ntlmssp v0.0.0-20190601005913-a22bdd33b2a4/go.mod h1:rZQicBRNZBfM+eydZ8LNaQ0p9twUfP6T0hUzJFhaxM4=
+github.com/launchdarkly/go-ntlmssp v1.0.1 h1:snB77118TQvf9tfHrkSyrIop/UX5e5VD2D2mv7Kh3wE=
+github.com/launchdarkly/go-ntlmssp v1.0.1/go.mod h1:/cq3t2JyALD7GdVF5BEWcEuGlIGa44FZ4v4CVk7vuCY=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20200604202706-70a84ac30bf9 h1:vEg9joUBmeBcK9iSJftGNf3coIG4HqZElCPehJsfAYM=
 golang.org/x/crypto v0.0.0-20200604202706-70a84ac30bf9/go.mod h1:LzIPMQfyMNhhGPhUkYOs5KpL4U8rLKemX1yGLhDgUto=
