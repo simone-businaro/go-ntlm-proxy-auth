@@ -86,15 +86,11 @@ func dialAndNegotiate(addr, proxyUsername, proxyPassword, proxyDomain string, ba
 		debugf("ntlm> Could not read response from proxy: %s", err)
 		return conn, err
 	}
-	_, err = ioutil.ReadAll(resp.Body)
-	if err != nil {
-		debugf("ntlm> Could not read response body from proxy: %s", err)
-		return conn, err
-	}
-	resp.Body.Close()
+	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusProxyAuthRequired {
-		debugf("ntlm> Expected %d as return status, got: %d", http.StatusProxyAuthRequired, resp.StatusCode)
-		return conn, errors.New(http.StatusText(resp.StatusCode))
+		// Connection is likely already authenticated
+		debugf("ntlm> Connection already authenticated, skipping NTLM challenge/authorization")
+		return conn, nil // Proceed without further NTLM steps
 	}
 	challenge := strings.Split(resp.Header.Get("Proxy-Authenticate"), " ")
 	if len(challenge) < 2 {
