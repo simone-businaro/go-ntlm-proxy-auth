@@ -1,4 +1,4 @@
-module github.com/launchdarkly/go-ntlm-proxy-auth
+module github.com/simone-businaro/go-ntlm-proxy-auth
 
 go 1.13
 
