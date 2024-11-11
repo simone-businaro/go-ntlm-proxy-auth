@@ -44,7 +44,7 @@ jobs:
     docker:
       - image: <<parameters.docker-image>>
 
-    working_directory: /go/src/github.com/launchdarkly/go-ntlm-proxy-auth
+    working_directory: /go/src/github.com/simone-businaro/go-ntlm-proxy-auth
 
     steps:
       - checkout
@@ -63,7 +63,7 @@ jobs:
 
     environment:
       GOPATH: C:\Users\VssAdministrator\go
-      PACKAGE_PATH: github.com/launchdarkly/go-ntlm-proxy-auth
+      PACKAGE_PATH: github.com/simone-businaro/go-ntlm-proxy-auth
 
     steps:
       - checkout

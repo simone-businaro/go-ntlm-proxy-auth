@@ -1,7 +1,7 @@
 # go-ntlm-proxy-auth
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GoDoc](https://godoc.org/github.com/launchdarkly/go-ntlm-proxy-auth?status.svg)](https://godoc.org/github.com/launchdarkly/go-ntlm-proxy-auth)
+[![GoDoc](https://godoc.org/github.com/simone-businaro/go-ntlm-proxy-auth?status.svg)](https://godoc.org/github.com/simone-businaro/go-ntlm-proxy-auth)
 [![Circle CI](https://circleci.com/gh/launchdarkly/go-ntlm-proxy-auth.svg?style=svg)](https://circleci.com/gh/launchdarkly/go-ntlm-proxy-auth)
 
 With this package, you can connect to http/https servers protected by an NTLM proxy in Golang.
